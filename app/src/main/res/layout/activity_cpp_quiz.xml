@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_gradient3"
+    tools:context=".CppQuiz">
+
+    <RadioGroup
+        android:id="@+id/cq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/cq1op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VAR_123" />
+
+        <RadioButton
+            android:id="@+id/cq1o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$var_name" />
+
+        <RadioButton
+            android:id="@+id/cq1o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7Rohit" />
+
+        <RadioButton
+            android:id="@+id/cq1o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7var_name" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/cpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="C++ Quiz"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Type provided by cpp but not c"
+        app:layout_constraintBottom_toTopOf="@+id/cq2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Correct Identifier in cpp"
+        app:layout_constraintBottom_toTopOf="@+id/cq1"
+        app:layout_constraintStart_toStartOf="@+id/cq2" />
+
+    <RadioGroup
+        android:id="@+id/cq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/cq2op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="double" />
+
+        <RadioButton
+            android:id="@+id/cq2o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="float" />
+
+        <RadioButton
+            android:id="@+id/cq2o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="int" />
+
+        <RadioButton
+            android:id="@+id/cq2o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bool" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cppQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
